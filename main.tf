@@ -7,3 +7,7 @@ provider "google" {
 module "buckets" {
  source = "./buckets"
 }
+
+module "tables" {
+ source = "./tables"
+}
