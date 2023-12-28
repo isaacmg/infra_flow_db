@@ -20,17 +20,5 @@ resource "google_bigquery_table" "default" {
     env = "default"
   }
 
-  schema = "${file("/Users/isaac/Documents/GitHub/infra_flow_db/tables/schema_meta.json")}"
-}
-
-resource "google_bigquery_table" "gage_data" {
-  dataset_id = google_bigquery_dataset.hydronet.dataset_id
-  table_id   = "gage_data"
-  project = google_bigquery_dataset.hydronet.project
-
-  labels = {
-    env = "default"
-  }
-
-  schema = "${file("/Users/isaac/Documents/GitHub/infra_flow_db/tables/schema_data.json")}"
+  schema = "${file("/Users/gisaac/Documents/GitHub/infra_flow_db/tables/schema_meta.json")}"
 }

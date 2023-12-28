@@ -5,6 +5,16 @@
     "description": "The id of the USGS gage"
   },
   {
+    "name": "description",
+    "type": "STRING",
+    "description": "The name of the USGS gage/location (name in JSON)"
+  },
+  {
+    "name": "JSON_PATH",
+    "type": "STRING",
+    "description": "The path to the JSON file on GCS"
+  },
+  {
     "name": "state",
     "type": "STRING",
     "description": "State of the USGS river basin"
@@ -50,14 +60,28 @@
     "mode": "NULLABLE",
     "description": "list of all ASOS stations within 100 miles"
   },
-
   { "name": "closest_scan_site",
     "type": "STRING",
     "mode": "NULLABLE",
     "description": "closest scan station"
+  },
 
-
-  }
-
+  { "name": "closest_snotel_triplet",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "closest scan station"
+  },
+{
+  "name": "sentinel_tile_id",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": "closest sentinel tile id"
+},
+{
+  "name": "sentinel_tile_path",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": "closest sentinel GCS"
+}
 
 ]
