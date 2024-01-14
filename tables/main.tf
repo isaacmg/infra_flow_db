@@ -3,7 +3,6 @@ resource "google_bigquery_dataset" "hydronet" {
   friendly_name               = "test"
   description                 = "This is a test description"
   location                    = "EU"
-  default_table_expiration_ms = 3600000
   project = "hydro-earthnet-db"
 
   labels = {
