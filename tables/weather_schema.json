@@ -1,0 +1,88 @@
+[
+  {
+    "name": "station_id",
+    "type": "STRING",
+    "description": "The id of the ASOS weather station"
+  },
+  {
+    "name": "date_time",
+    "type": "DATETIME",
+    "description": "The date and time of the weather observation." 
+
+  },
+  {
+    "name": "tmpf",
+    "type": "FLOAT64",
+    "description": "The temperature in Fahrenheit"
+  },
+  {
+    "name": "dwpf",
+    "type": "FLOAT64",
+    "description": "The dewpoint in Fahrenheit"
+  },
+  {
+    "name": "relh",
+    "type": "FLOAT64",
+    "description": "State of the USGS river basin",
+    "mode": "NULLABLE"
+  },
+
+  {
+    "name": "drct",
+    "type": "FLOAT64",
+    "description": "Latitiude as a string",
+    "mode": "NULLABLE"
+  },
+
+  {
+    "name": "sknt",
+    "type": "FLOAT64",
+    "description": "Wind Speed in knots"
+  }, 
+
+  {
+    "name": "precip",
+    "type": "FLOAT64",
+    "description": "Precipitation in millimeters"
+  },
+
+  {
+    "name": "alti",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Altimeter in millibars"
+
+  },
+
+  {
+    "name": "snowdepth",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "The depth of the snow in millimeters"
+  },
+
+  {
+    "name": "vsby",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Visibility in miles"
+  },
+  { "name": "gust",
+    "type": "FLOAT64",
+    "mode": "NULLABLE",
+    "description": "Gust in knots"
+  },
+
+  { "name": "skyc1",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "Sky Level 1 Coverage"
+  },
+
+  { "name": "feel",
+  "type": "FLOAT64",
+  "mode": "NULLABLE",
+  "description": "The apparent temperature in Fahrenheit"
+}
+
+]

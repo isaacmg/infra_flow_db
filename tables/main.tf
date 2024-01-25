@@ -21,3 +21,15 @@ resource "google_bigquery_table" "default" {
 
   schema = "${file("/Users/gisaac/Documents/GitHub/infra_flow_db/tables/schema_meta.json")}"
 }
+
+resource "google_bigquery_table" "weather_data" {
+  dataset_id = google_bigquery_dataset.hydronet.dataset_id
+  table_id   = "weather_asos"
+  project = google_bigquery_dataset.hydronet.project
+
+  labels = {
+    env = "default"
+  }
+
+  schema = "${file("/Users/gisaac/Documents/GitHub/infra_flow_db/tables/weather_schema.json")}"
+}
